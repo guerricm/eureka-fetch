@@ -3,7 +3,8 @@ spring:
     config:
       enabled: false
       discovery:
-        enabled: true
+        #if enabled = false the gateway fetch eureka and SERVICE is present or not in http://localhost:8000/actuator/gateway/routes
+        enabled: false
         service-id: configserver
 #eureka:
 #  client:
