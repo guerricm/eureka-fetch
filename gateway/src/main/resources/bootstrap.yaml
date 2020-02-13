@@ -6,10 +6,10 @@ spring:
         #if enabled = false the gateway fetch eureka and SERVICE is present or not in http://localhost:8000/actuator/gateway/routes
         enabled: true
         service-id: configserver
-#eureka:
-#  client:
-#    register-with-eureka: true
-#    fetch-registry: true
-#    registry-fetch-interval-seconds: 5
-#    service-url:
-#      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}     
